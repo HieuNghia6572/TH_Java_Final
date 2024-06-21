@@ -37,7 +37,7 @@ public class SecurityConfig {
                         .requestMatchers( "/css/**", "/js/**", "/", "/register",
                                 "/error")
                         .permitAll()
-                        .requestMatchers( "/books/edit", "/books/delete")
+                        .requestMatchers( "/books/edit/*", "/books/delete/*")
                         .hasAnyAuthority("ADMIN")
                         .requestMatchers("/books", "/books/add")
                         .hasAnyAuthority("ADMIN", "USER")
