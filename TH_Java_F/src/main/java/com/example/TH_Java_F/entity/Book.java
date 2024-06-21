@@ -18,8 +18,8 @@ import com.example.TH_Java_F.validator.annotation.ValidUserId;
 public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id
-            ;
+    private Long id;
+
     @Column(name = "title")
     @NotEmpty(message = "Title must not be emty")
     @Size(max = 50, min = 1, message = "Title must be less than 50 characters")
