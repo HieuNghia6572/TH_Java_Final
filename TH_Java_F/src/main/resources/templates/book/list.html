@@ -18,7 +18,7 @@ lang="en">
             <th>Author</th>
             <th>Price</th>
             <th>Category</th>
-            <th sec:autorize="hasAnyAuthority('ADMIN')">Action</th>
+            <th sec:authorize="hasAnyAuthority('ADMIN')">Action</th>
         </tr>
         <tr th:each="book: ${books}">
             <td th:text="${book.id}"></td>
